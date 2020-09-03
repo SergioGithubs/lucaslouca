@@ -19,7 +19,7 @@ var serverIpAddress = process.env.RTC_IP || 'localhost'
 // var socketIoServer = '127.0.0.1' + ':' + serverPort;
 // var socketIoServer = 'localhost' + ':' + serverPort;
 // var socketIoServer = 'lucas-video-chat.herokuapp.com/' + ':' + serverPort;
-var socketIoServer = 'lucas-video-chat.herokuapp.com/';
+var socketIoServer = 'lucas-video-chat.herokuapp.com';
 
 
 ////////////////////////////////////////////////
