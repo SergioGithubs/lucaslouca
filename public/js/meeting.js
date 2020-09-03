@@ -322,8 +322,8 @@ var Meeting = function (socketioHost) {
         var namespace = _host + '/' + channel;
         console.log('Opening private channel:' + namespace);
         // var sckt = io.connect(namespace, { 'forceNew': true, 'transports': ['websocket'] });
-        // var sckt = io.connect(namespace, { 'forceNew': true, 'transports': ['websocket'] });
-        var sckt = io();
+        var sckt = io.connect(namespace, { 'forceNew': true, 'transports': ['websocket'] });
+        // var sckt = io();
         return sckt;
     }
 
