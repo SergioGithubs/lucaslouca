@@ -423,9 +423,9 @@ var Meeting = function (socketioHost) {
 
         var constrs = '';
         constrs = stream.getVideoTracks()[0].getConstraints();
-        constrs.frameRate = 1;
+        constrs.frameRate = 5;
         // constrs.frameRate = { min: 3, ideal: 20, max: 30 };
-        constrs.width = 100;
+        // constrs.width = 100;
         // constrs.width = { min: 100, ideal: 400, max: 900 };
         stream.getVideoTracks()[0].applyConstraints(constrs);
 
